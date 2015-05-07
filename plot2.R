@@ -1,7 +1,7 @@
 ## Getting full dataset
 export.file <- file("household_power_consumption.txt")
 if (!export.file %in% list.files()) {
-        setwd("D:/Sokolka/R/R rogramming lessons/Exploratory Data Analyse")
+        setwd("~/R/R rogramming lessons/Exploratory Data Analyse")
         } 
 column.names <- c("Date", "Time", "Global_active_power", "Global_reactive_power", "Voltage","Global_intensity", "Sub_metering_1", "Sub_metering_2", "Sub_metering_3")
 electric.power <- read.table(export.file, col.names = column.names, sep=";", header = TRUE, na.strings="?")
