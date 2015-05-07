@@ -12,7 +12,7 @@ rm(electric.power)
 ## Converting dates to needed format
 datetime <- paste(as.Date(ep.data$Date), ep.data$Time)
 ep.data$datetime <- as.POSIXct(datetime)
-## Creating line lot
+## Creating line plot
 plot(ep.data$Global_active_power~ep.data$datetime,type="l",xlab="",ylab="Global active power (kilowatts)")
 dev.copy(png, file="plot2.png", height=480, width=480)
 dev.off()
